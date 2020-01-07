@@ -6,7 +6,13 @@ const GAME_DATA = [
     imageUrl: '/projects/aw/awIcon.png',
     id: 1,
     shortDes: 'Survive endless enemies waves.',
-    linkUrl: '/1'
+    linkUrl: '/1',
+    screenshots: [
+      '/projects/aw/aw1.png',
+      '/projects/aw/aw2.png'
+    ],
+    storeLink: 'no'
+
   },
   {
     title: 'Monkey Kong',
@@ -15,7 +21,12 @@ const GAME_DATA = [
     imageUrl: '/projects/kong/icon.png',
     shortDes: 'Survive, run through obstacles and tests your reflexes',
     id: 2,
-    linkUrl: ''
+    linkUrl: '',
+    screenshots: [
+      '/projects/kong/1.jpeg',
+      '/projects/kong/2.jpeg'
+    ],
+    storeLink: 'no'
   },
   {
     title: 'Ninja Crush',
@@ -24,7 +35,15 @@ const GAME_DATA = [
     imageUrl: '/projects/ninja/ninjaCrush.png',
     shortDes: 'Fast paced arcade game, climb floors until you get crushed.',
     id: 3,
-    linkUrl: ''
+    linkUrl: '',
+    screenshots: [
+      '/projects/ninja/1.jpeg',
+      '/projects/ninja/2.jpeg',
+      '/projects/ninja/3.jpeg',
+      '/projects/ninja/4.jpeg',
+      '/projects/ninja/5.jpeg',
+    ],
+    storeLink: 'no'
   },
   {
     title: 'Castle Rush',
@@ -35,7 +54,11 @@ const GAME_DATA = [
     shortDes: ' Metroidvania roguelite with procedural generation ',
     size: '',
     id: 4,
-    linkUrl: ''
+    linkUrl: '',
+    screenshots: [
+      '/projects/castlerush/1.png'
+    ],
+    storeLink: 'https://croix.itch.io/castle-rush'
   },
   {
     title: 'Dingo Dash',
@@ -45,7 +68,14 @@ const GAME_DATA = [
     shortDes: '2.5D Endless Runner',
     size: '',
     id: 5,
-    linkUrl: ''
+    linkUrl: '',
+    screenshots: [
+      '/projects/dingodash/1.jpeg',
+      '/projects/dingodash/2.jpeg',
+      '/projects/dingodash/3.jpeg',
+      '/projects/dingodash/4.jpeg',
+    ],
+    storeLink: 'no'
   },
   {
     title: 'Dingo World',
@@ -56,7 +86,13 @@ const GAME_DATA = [
     shortDes: 'A procedural 3D platformer',
     size: '',
     id: 6,
-    linkUrl: ''
+    linkUrl: '',
+    screenshots: [
+      '/projects/dingoworld/1.png',
+      '/projects/dingoworld/2.png',
+      '/projects/dingoworld/3.png',
+    ],
+    storeLink: 'https://croix.itch.io/dingo-world'
   },
   {
     title: 'Gridwave',
@@ -67,7 +103,13 @@ const GAME_DATA = [
     shortDes: 'F-zero meets 80s Neon',
     size: 'large',
     id: 7,
-    linkUrl: '/7'
+    linkUrl: '/7',
+    screenshots: [
+      '/projects/gridwave/1.png',
+      '/projects/gridwave/2.png',
+      '/projects/gridwave/3.png',
+    ],
+    storeLink: 'https://croix.itch.io/gridwave'
   }
 ];
 

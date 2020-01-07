@@ -6,14 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
 
-
-import Button from '@material-ui/core/Button';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
-import DeleteIcon from '@material-ui/icons/Delete';
-import NavigationIcon from '@material-ui/icons/Navigation';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 import IconButton from '@material-ui/core/IconButton';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';

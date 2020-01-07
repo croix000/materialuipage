@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from "react";
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -23,26 +22,16 @@ import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 
 
 import Footer from './Footer';
-import IconButton from '@material-ui/core/IconButton';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import SimpleModalWrapped from './Modal';
 
-import Modal from '@material-ui/core/Modal';
+import AutoRotatingCarouselModalTest from './RotatingModal';
+
+
 
 import { ReactComponent as Logo } from './assets/crown.svg';
-function Copyright() {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://croixapps.com/">
-                Croix Apps
-      </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
+
+
+
 
 const useStyles = makeStyles(theme => ({
     icon: {
@@ -73,12 +62,14 @@ const useStyles = makeStyles(theme => ({
     footer: {
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6),
-    },
+    }
 }));
 
 
 
+
 const cards = GAME_DATA;
+
 
 export default function Album() {
     const classes = useStyles();
@@ -98,7 +89,7 @@ export default function Album() {
             </AppBar>
             <main>
                 {/* Hero unit */}
-                <div className={classes.heroContent}>
+                <div className={classes.heroContent} key="1">
                     <Container maxWidth="sm">
                         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                             Games
@@ -111,13 +102,14 @@ export default function Album() {
                 <Container className={classes.cardGrid} maxWidth="md">
                     {/* End hero unit */}
                     <Grid container spacing={4}>
-                        {cards.slice(0).reverse().map(card => (
-                            <Grid item key={card} xs={12} sm={6} md={4}>
-                                <Card className={classes.card}>
+                        {cards.slice(0).reverse().map((card, index) => (
+
+                            < Grid item key={card} xs={12} sm={6} md={4} >
+                                <Card className={classes.card} key={index}>
                                     <CardMedia
                                         className={classes.cardMedia}
                                         image={card.imageUrl}
-                                        title="Image title"
+                                        title={card.title}
                                     />
                                     <CardContent className={classes.cardContent}>
                                         <Typography gutterBottom variant="h5" component="h2">
@@ -128,10 +120,11 @@ export default function Album() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small" color="primary">
-                                            View
-                    </Button>
+
+
+                                        <AutoRotatingCarouselModalTest title={card.title} description={card.shortDes} image={card.imageUrl} screenshots={card.screenshots} storeLink={card.storeLink}></AutoRotatingCarouselModalTest>
                                         {
+
                                             {
                                                 'ios': <Chip color={card.active} icon={<PhoneIphoneIcon />}
                                                     label={card.year} />,
@@ -150,7 +143,7 @@ export default function Album() {
                 </Container>
             </main>
             {/* Footer */}
-            <div className={classes.heroContent}>
+            <div className={classes.heroContent} key="2">
                 <Container maxWidth="sm">
                     <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                         About me
@@ -176,6 +169,6 @@ export default function Album() {
             </div>
             <Footer title="SOCIAL MEDIA" description="" />
             {/* End footer */}
-        </React.Fragment>
+        </React.Fragment >
     );
 }

@@ -12,9 +12,11 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.5.1",
     "clsx": "latest",
+    "material-auto-rotating-carousel": "^3.0.2",
     "react": "latest",
     "react-dom": "latest",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "react-swipeable-views": "^0.13.3"
   },
   "browserslist": {
     "production": [
