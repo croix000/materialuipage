@@ -170,3 +170,4 @@ Slide.propTypes = {
 }
 
 export default withStyles(styles)(Slide)
+
