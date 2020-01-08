@@ -8,25 +8,6 @@ import { red, blue, green } from "@material-ui/core/colors";
 import AutoRotatingCarousel from './AutoRotatingCarousel';
 import Slide from './Slide';
 
-/*
-
-                
-
-                    if(!'undefined'===screenshots){
-                    this.screenshots.map((screen, index) => (
-
-                        <Slide
-
-                            mediaBackgroundStyle={{
-                                backgroundImage: `url(${screen})`, backgroundSize: 'cover',
-                                overflow: 'hidden'
-                            }}
-                            style={{ backgroundColor: blue[600] }}
-
-                        />
-                    ))}
-                
-*/
 
 
 function AutoRotatingCarouselModal({ handleOpen, setHandleOpen, isMobile, title, description, image, screenshots, storeLink }) {
